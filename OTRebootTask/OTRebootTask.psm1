@@ -1,4 +1,4 @@
-function New-RebootTask 
+function New-OTRebootTask 
 {
     Param (
     [datetime]$Date = (Get-Date -Second 0 -Minute 0 -Hour 0).addDays(1),
@@ -38,7 +38,7 @@ function New-RebootTask
     }
 }
 
-function Remove-RebootTask
+function Remove-OTRebootTask
 {
     Param (  
     [String[]]$ComputerName = "localhost"
@@ -65,7 +65,7 @@ function Remove-RebootTask
     }
 }
 
-function Get-RebootTask 
+function Get-OTRebootTask 
 {
     Param (
     [Parameter(ParameterSetName="ComputerName")]
